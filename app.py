@@ -162,4 +162,5 @@ if __name__ == "__main__":
     user, pw = os.getenv("APP_USER"), os.getenv("APP_PASS")
     if os.getenv("SPACE_ID") and not (user and pw):
         raise SystemExit("APP_USER / APP_PASS secrets are required when running on Hugging Face.")
-    demo.launch(auth=(user, pw) if user and pw else None, max_file_size="2gb")
+    # SSR crashes on Spaces (svelte-i18n locale error) and then fails the localhost check
+    demo.launch(auth=(user, pw) if user and pw else None, max_file_size="2gb", ssr_mode=False)
