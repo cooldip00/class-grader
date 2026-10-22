@@ -1,0 +1,357 @@
+{
+ "summary": {
+  "prompt_version": "v2",
+  "model": "claude-sonnet-5-5",
+  "n_labelled": 10,
+  "exact": 6,
+  "within_one": 9,
+  "llm_holistic_exact": 3
+ },
+ "rows": [
+  {
+   "id": "average/B435",
+   "batch": "B435",
+   "label": "Average",
+   "predicted": "Average",
+   "llm_holistic": "Average",
+   "weighted_score": 2.79,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 2.5,
+    "individual_attention": 3.0,
+    "homework_reinforcement": 2.5,
+    "tone_energy": 3.0,
+    "visual_compliance": 2.0
+   },
+   "duration_min": 37.9,
+   "english_ratio": 0.76,
+   "visual": {
+    "visual_score": 2.0,
+    "visual_reasons": [
+     "Tutor's face visible in only 49% of the moments they were speaking.",
+     "Face is poorly lit (median brightness 31/255)."
+    ],
+    "frames_sampled": 227,
+    "tutor_speaking_frames": 95,
+    "tutor_face_visible_share": 0.49,
+    "tutor_camera_off_share": 0.01,
+    "tutor_face_brightness": 31.0,
+    "tutor_on_full_camera_share": 0.07
+   }
+  },
+  {
+   "id": "average/B516",
+   "batch": "B516",
+   "label": "Average",
+   "predicted": "Average",
+   "llm_holistic": "Average",
+   "weighted_score": 2.97,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 2.5,
+    "individual_attention": 3.0,
+    "homework_reinforcement": 4.0,
+    "tone_energy": 3.0,
+    "visual_compliance": 5.0
+   },
+   "duration_min": 43.6,
+   "english_ratio": 0.72,
+   "visual": {
+    "visual_score": 5.0,
+    "visual_reasons": [],
+    "frames_sampled": 261,
+    "tutor_speaking_frames": 150,
+    "tutor_face_visible_share": 0.89,
+    "tutor_camera_off_share": 0.02,
+    "tutor_face_brightness": 74.6,
+    "tutor_on_full_camera_share": 0.41
+   }
+  },
+  {
+   "id": "demo/demo malayalam",
+   "batch": "demo malayalam",
+   "label": null,
+   "predicted": "Average",
+   "llm_holistic": "Average",
+   "weighted_score": 3.03,
+   "confidence": "low",
+   "pillars": {
+    "structure_rapport": 2.5,
+    "individual_attention": 3.5,
+    "homework_reinforcement": 2.0,
+    "tone_energy": 3.5,
+    "visual_compliance": 5.0
+   },
+   "duration_min": 51.6,
+   "english_ratio": 0.52,
+   "visual": {
+    "visual_score": 5.0,
+    "visual_reasons": [],
+    "frames_sampled": 310,
+    "tutor_speaking_frames": 181,
+    "tutor_face_visible_share": 0.97,
+    "tutor_camera_off_share": 0.0,
+    "tutor_face_brightness": 77.1,
+    "tutor_on_full_camera_share": 0.15
+   }
+  },
+  {
+   "id": "demo/demo english",
+   "batch": "demo english",
+   "label": null,
+   "predicted": "Average",
+   "llm_holistic": "Good",
+   "weighted_score": 3.24,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 3.0,
+    "individual_attention": 4.0,
+    "homework_reinforcement": 2.0,
+    "tone_energy": 3.0,
+    "visual_compliance": 5.0
+   },
+   "duration_min": 44.0,
+   "english_ratio": 0.73,
+   "visual": {
+    "visual_score": 5.0,
+    "visual_reasons": [],
+    "frames_sampled": 264,
+    "tutor_speaking_frames": 147,
+    "tutor_face_visible_share": 1.0,
+    "tutor_camera_off_share": 0.0,
+    "tutor_face_brightness": 113.7,
+    "tutor_on_full_camera_share": 0.2
+   }
+  },
+  {
+   "id": "excellent/B472",
+   "batch": "B472",
+   "label": "Excellent",
+   "predicted": "Good",
+   "llm_holistic": "Good",
+   "weighted_score": 3.56,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 3.5,
+    "individual_attention": 3.5,
+    "homework_reinforcement": 4.0,
+    "tone_energy": 3.5,
+    "visual_compliance": 5.0
+   },
+   "duration_min": 56.0,
+   "english_ratio": 0.69,
+   "visual": {
+    "visual_score": 5.0,
+    "visual_reasons": [],
+    "frames_sampled": 336,
+    "tutor_speaking_frames": 160,
+    "tutor_face_visible_share": 0.9,
+    "tutor_camera_off_share": 0.03,
+    "tutor_face_brightness": 111.5,
+    "tutor_on_full_camera_share": 0.29
+   }
+  },
+  {
+   "id": "excellent/B491",
+   "batch": "B491",
+   "label": "Excellent",
+   "predicted": "Average",
+   "llm_holistic": "Good",
+   "weighted_score": 3.41,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 3.0,
+    "individual_attention": 4.0,
+    "homework_reinforcement": 2.5,
+    "tone_energy": 3.5,
+    "visual_compliance": 5.0
+   },
+   "duration_min": 53.0,
+   "english_ratio": 0.8,
+   "visual": {
+    "visual_score": 5.0,
+    "visual_reasons": [],
+    "frames_sampled": 322,
+    "tutor_speaking_frames": 177,
+    "tutor_face_visible_share": 0.85,
+    "tutor_camera_off_share": 0.11,
+    "tutor_face_brightness": 86.5,
+    "tutor_on_full_camera_share": 0.16
+   }
+  },
+  {
+   "id": "good/B435",
+   "batch": "B435",
+   "label": "Good",
+   "predicted": "Average",
+   "llm_holistic": "Average",
+   "weighted_score": 3.18,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 3.0,
+    "individual_attention": 3.5,
+    "homework_reinforcement": 3.0,
+    "tone_energy": 3.0,
+    "visual_compliance": 3.0
+   },
+   "duration_min": 44.4,
+   "english_ratio": 0.73,
+   "visual": {
+    "visual_score": 3.0,
+    "visual_reasons": [
+     "Tutor's face visible in only 17% of the moments they were speaking."
+    ],
+    "frames_sampled": 267,
+    "tutor_speaking_frames": 46,
+    "tutor_face_visible_share": 0.17,
+    "tutor_camera_off_share": 0.0,
+    "tutor_face_brightness": 114.0,
+    "tutor_on_full_camera_share": 0.0
+   }
+  },
+  {
+   "id": "good/B552",
+   "batch": "B552",
+   "label": "Good",
+   "predicted": "Good",
+   "llm_holistic": "Good",
+   "weighted_score": 3.62,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 3.5,
+    "individual_attention": 3.5,
+    "homework_reinforcement": 4.5,
+    "tone_energy": 3.5,
+    "visual_compliance": 5.0
+   },
+   "duration_min": 45.8,
+   "english_ratio": 0.76,
+   "visual": {
+    "visual_score": 5.0,
+    "visual_reasons": [],
+    "frames_sampled": 275,
+    "tutor_speaking_frames": 143,
+    "tutor_face_visible_share": 0.76,
+    "tutor_camera_off_share": 0.08,
+    "tutor_face_brightness": 66.3,
+    "tutor_on_full_camera_share": 0.1
+   }
+  },
+  {
+   "id": "quality issue/B392",
+   "batch": "B392",
+   "label": "Poor",
+   "predicted": "Average",
+   "llm_holistic": "Average",
+   "weighted_score": 3.12,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 3.0,
+    "individual_attention": 3.5,
+    "homework_reinforcement": 2.5,
+    "tone_energy": 3.0,
+    "visual_compliance": 4.0
+   },
+   "duration_min": 60.5,
+   "english_ratio": 0.7,
+   "visual": {
+    "visual_score": 4.0,
+    "visual_reasons": [
+     "Camera off or screen black in 16% of the tutor's speaking moments."
+    ],
+    "frames_sampled": 360,
+    "tutor_speaking_frames": 202,
+    "tutor_face_visible_share": 0.68,
+    "tutor_camera_off_share": 0.16,
+    "tutor_face_brightness": 75.0,
+    "tutor_on_full_camera_share": 0.17
+   }
+  },
+  {
+   "id": "quality issue/B441",
+   "batch": "B441",
+   "label": "Poor",
+   "predicted": "Poor",
+   "llm_holistic": "Good",
+   "weighted_score": 3.32,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 2.5,
+    "individual_attention": 4.0,
+    "homework_reinforcement": 3.0,
+    "tone_energy": 3.5,
+    "visual_compliance": 1.5
+   },
+   "duration_min": 84.3,
+   "english_ratio": 0.71,
+   "visual": {
+    "visual_score": 1.5,
+    "visual_reasons": [
+     "Tutor's face visible in only 4% of the moments they were speaking."
+    ],
+    "frames_sampled": 536,
+    "tutor_speaking_frames": 186,
+    "tutor_face_visible_share": 0.04,
+    "tutor_camera_off_share": 0.06,
+    "tutor_face_brightness": 76.4,
+    "tutor_on_full_camera_share": 0.02
+   }
+  },
+  {
+   "id": "weak/B482",
+   "batch": "B482",
+   "label": "Poor",
+   "predicted": "Poor",
+   "llm_holistic": "Average",
+   "weighted_score": 2.29,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 2.0,
+    "individual_attention": 3.0,
+    "homework_reinforcement": 1.5,
+    "tone_energy": 2.0,
+    "visual_compliance": 5.0
+   },
+   "duration_min": 59.2,
+   "english_ratio": 0.76,
+   "visual": {
+    "visual_score": 5.0,
+    "visual_reasons": [],
+    "frames_sampled": 355,
+    "tutor_speaking_frames": 81,
+    "tutor_face_visible_share": 0.93,
+    "tutor_camera_off_share": 0.06,
+    "tutor_face_brightness": 101.1,
+    "tutor_on_full_camera_share": 0.04
+   }
+  },
+  {
+   "id": "weak/B558",
+   "batch": "B558",
+   "label": "Poor",
+   "predicted": "Poor",
+   "llm_holistic": "Average",
+   "weighted_score": 2.68,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 2.5,
+    "individual_attention": 3.0,
+    "homework_reinforcement": 1.5,
+    "tone_energy": 3.0,
+    "visual_compliance": 5.0
+   },
+   "duration_min": 46.2,
+   "english_ratio": 0.69,
+   "visual": {
+    "visual_score": 5.0,
+    "visual_reasons": [],
+    "frames_sampled": 276,
+    "tutor_speaking_frames": 164,
+    "tutor_face_visible_share": 0.68,
+    "tutor_camera_off_share": 0.01,
+    "tutor_face_brightness": 126.4,
+    "tutor_on_full_camera_share": 0.0
+   }
+  }
+ ]
+}

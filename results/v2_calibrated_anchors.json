@@ -1,0 +1,240 @@
+{
+ "summary": {
+  "prompt_version": "v2",
+  "model": "claude-sonnet-5-5",
+  "n_labelled": 10,
+  "exact": 5,
+  "within_one": 9,
+  "llm_holistic_exact": 3
+ },
+ "rows": [
+  {
+   "id": "average/B435",
+   "batch": "B435",
+   "label": "Average",
+   "predicted": "Average",
+   "llm_holistic": "Average",
+   "weighted_score": 2.79,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 2.5,
+    "individual_attention": 3.0,
+    "homework_reinforcement": 2.5,
+    "tone_energy": 3.0,
+    "visual_compliance": null
+   },
+   "duration_min": 37.9,
+   "english_ratio": 0.76,
+   "visual": null
+  },
+  {
+   "id": "average/B516",
+   "batch": "B516",
+   "label": "Average",
+   "predicted": "Average",
+   "llm_holistic": "Average",
+   "weighted_score": 2.97,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 2.5,
+    "individual_attention": 3.0,
+    "homework_reinforcement": 4.0,
+    "tone_energy": 3.0,
+    "visual_compliance": null
+   },
+   "duration_min": 43.6,
+   "english_ratio": 0.72,
+   "visual": null
+  },
+  {
+   "id": "demo/demo malayalam",
+   "batch": "demo malayalam",
+   "label": null,
+   "predicted": "Average",
+   "llm_holistic": "Average",
+   "weighted_score": 3.03,
+   "confidence": "low",
+   "pillars": {
+    "structure_rapport": 2.5,
+    "individual_attention": 3.5,
+    "homework_reinforcement": 2.0,
+    "tone_energy": 3.5,
+    "visual_compliance": null
+   },
+   "duration_min": 51.6,
+   "english_ratio": 0.52,
+   "visual": null
+  },
+  {
+   "id": "demo/demo english",
+   "batch": "demo english",
+   "label": null,
+   "predicted": "Average",
+   "llm_holistic": "Good",
+   "weighted_score": 3.24,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 3.0,
+    "individual_attention": 4.0,
+    "homework_reinforcement": 2.0,
+    "tone_energy": 3.0,
+    "visual_compliance": null
+   },
+   "duration_min": 44.0,
+   "english_ratio": 0.73,
+   "visual": null
+  },
+  {
+   "id": "excellent/B472",
+   "batch": "B472",
+   "label": "Excellent",
+   "predicted": "Good",
+   "llm_holistic": "Good",
+   "weighted_score": 3.56,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 3.5,
+    "individual_attention": 3.5,
+    "homework_reinforcement": 4.0,
+    "tone_energy": 3.5,
+    "visual_compliance": null
+   },
+   "duration_min": 56.0,
+   "english_ratio": 0.69,
+   "visual": null
+  },
+  {
+   "id": "excellent/B491",
+   "batch": "B491",
+   "label": "Excellent",
+   "predicted": "Average",
+   "llm_holistic": "Good",
+   "weighted_score": 3.41,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 3.0,
+    "individual_attention": 4.0,
+    "homework_reinforcement": 2.5,
+    "tone_energy": 3.5,
+    "visual_compliance": null
+   },
+   "duration_min": 53.0,
+   "english_ratio": 0.8,
+   "visual": null
+  },
+  {
+   "id": "good/B435",
+   "batch": "B435",
+   "label": "Good",
+   "predicted": "Average",
+   "llm_holistic": "Average",
+   "weighted_score": 3.18,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 3.0,
+    "individual_attention": 3.5,
+    "homework_reinforcement": 3.0,
+    "tone_energy": 3.0,
+    "visual_compliance": null
+   },
+   "duration_min": 44.4,
+   "english_ratio": 0.73,
+   "visual": null
+  },
+  {
+   "id": "good/B552",
+   "batch": "B552",
+   "label": "Good",
+   "predicted": "Good",
+   "llm_holistic": "Good",
+   "weighted_score": 3.62,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 3.5,
+    "individual_attention": 3.5,
+    "homework_reinforcement": 4.5,
+    "tone_energy": 3.5,
+    "visual_compliance": null
+   },
+   "duration_min": 45.8,
+   "english_ratio": 0.76,
+   "visual": null
+  },
+  {
+   "id": "quality issue/B392",
+   "batch": "B392",
+   "label": "Poor",
+   "predicted": "Average",
+   "llm_holistic": "Average",
+   "weighted_score": 3.12,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 3.0,
+    "individual_attention": 3.5,
+    "homework_reinforcement": 2.5,
+    "tone_energy": 3.0,
+    "visual_compliance": null
+   },
+   "duration_min": 60.5,
+   "english_ratio": 0.7,
+   "visual": null
+  },
+  {
+   "id": "quality issue/B441",
+   "batch": "B441",
+   "label": "Poor",
+   "predicted": "Average",
+   "llm_holistic": "Good",
+   "weighted_score": 3.32,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 2.5,
+    "individual_attention": 4.0,
+    "homework_reinforcement": 3.0,
+    "tone_energy": 3.5,
+    "visual_compliance": null
+   },
+   "duration_min": 84.3,
+   "english_ratio": 0.71,
+   "visual": null
+  },
+  {
+   "id": "weak/B482",
+   "batch": "B482",
+   "label": "Poor",
+   "predicted": "Poor",
+   "llm_holistic": "Average",
+   "weighted_score": 2.29,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 2.0,
+    "individual_attention": 3.0,
+    "homework_reinforcement": 1.5,
+    "tone_energy": 2.0,
+    "visual_compliance": null
+   },
+   "duration_min": 59.2,
+   "english_ratio": 0.76,
+   "visual": null
+  },
+  {
+   "id": "weak/B558",
+   "batch": "B558",
+   "label": "Poor",
+   "predicted": "Poor",
+   "llm_holistic": "Average",
+   "weighted_score": 2.68,
+   "confidence": "medium",
+   "pillars": {
+    "structure_rapport": 2.5,
+    "individual_attention": 3.0,
+    "homework_reinforcement": 1.5,
+    "tone_energy": 3.0,
+    "visual_compliance": null
+   },
+   "duration_min": 46.2,
+   "english_ratio": 0.69,
+   "visual": null
+  }
+ ]
+}

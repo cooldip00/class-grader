@@ -1,0 +1,4 @@
+{
+ "summary": {"prompt_version": "v2", "model": "claude-sonnet-5-5", "n_labelled": 10, "exact": 3, "within_one": 10, "llm_holistic_exact": 3,
+  "note": "Rows not kept: same LLM judgements as v2 with visual compliance averaged in at weight 0.15. Summary copied from the run log."}
+}

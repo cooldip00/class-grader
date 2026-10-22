@@ -1,0 +1,17 @@
+.env
+.cache/
+__pycache__/
+*.pyc
+*.mp4
+*.m4a
+*.mp3
+*.wav
+*.vtt
+*.pdf
+*.jpg
+*.png
+flagged/
+.gradio/
+.venv/
+.pytest_cache/
+!grader/assets/*.onnx
