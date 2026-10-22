@@ -38,14 +38,17 @@ Label mapping: weak and quality issue -> Poor. Demo recordings shown but not sco
 - [x] docs/about.md — How it works & privacy tab
 - [x] requirements.txt (gradio pinned via HF README sdk_version 5.38.0, not in requirements)
 - [x] local app test in .venv (HTTP 200, 3 tabs, cached B435 report renders; OpenCV 5 YuNet = same B441 numbers)
-- [ ] test STT path on a short clip
+- [x] test STT path — hosted, weak/B558 without vtt: 185 s, works, but graded Average (3.21)
+      vs Poor (2.68) with vtt: attention 3->4, tone 3->3.5 (merged/mislabelled speakers?)
 - [x] git init + first commit 9a5df1b (scanned: no keys/quotes/emails in files). GitHub repo created by user (empty).
-- [ ] push to github.com/cooldip00/class-grader (commit author email = user's gmail; offered noreply)
-- [ ] HF Space under CoolDip00: Gradio SDK needs billing. Decision: ~$5 credits + **CPU upgrade**
-      hardware + ~1 h sleep time (PRO $9 or Streamlit rewrite rejected). Deploy with
-      huggingface_hub upload_folder, NOT git push (HF rejects plain-git binaries like the .onnx).
-      Secrets ANTHROPIC_API_KEY, GROQ_API_KEY, APP_USER, APP_PASS set by user.
-- [ ] end-to-end test on the hosted app
+- [x] pushed to github.com/cooldip00/class-grader (author = GitHub noreply email)
+- [x] HF Space CoolDip00/class-grader: ~$5 credits + **CPU upgrade** + 1 h sleep (PRO $9 or
+      Streamlit rewrite rejected). Deployed with huggingface_hub upload_folder of `git ls-files`
+      (scratchpad deploy.py), NOT git push (HF rejects plain-git binaries like the .onnx).
+      Gradio SSR crashed on Spaces (svelte-i18n locale) -> `ssr_mode=False`.
+- [x] hosted smoke test: no login 401, wrong pw 400, login 200, 3 tabs, benchmark renders
+- [x] hosted e2e average/B435 + vtt: 102 s, **Poor 2.68** (benchmark run: Average 2.79; tone 3->2.5).
+      Judge noise at the 2.75 boundary -> consider median of several judge runs.
 - [x] README draft with HF frontmatter (method, results v1-v4, privacy, limitations, run locally)
 - [ ] 300-word explanation
 - [ ] export + redact AI history (Claude Code + Antigravity); drop screenshots showing keys
@@ -93,3 +96,6 @@ labels -> shown in app, not scored or sent to judge.
   app.py only deletes uploads inside the Gradio temp dir. Waiting on user: rotate keys, GitHub
   repo, HF Space + secrets, HF_TOKEN in .env. Next (07:30): STT clip test, HF README frontmatter,
   git push, deploy, hosted e2e, README, explanation, history redaction.
+- Thu ~23:55 pushed to GitHub, deployed Space (SSR fix), hosted smoke + e2e (vtt and STT) pass.
+  Found: judge variance flips boundary grades; STT path over-scores attention. Next: decide on
+  judge variance fix, 300-word explanation, history redaction, scratchpad cleanup.
