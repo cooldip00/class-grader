@@ -55,7 +55,7 @@ Label mapping: weak and quality issue -> Poor. Demo recordings shown but not sco
 - [x] README draft with HF frontmatter (method, results v1-v4, privacy, limitations, run locally)
 - [ ] 300-word explanation
 - [ ] export + redact AI history (Claude Code + Antigravity); drop screenshots showing keys
-- [ ] delete scratchpad frames/contact sheets (identifiable children)
+- [x] delete scratchpad frames/contact sheets/feature dumps (Fri ~00:30; only scripts remain)
 - [ ] submit
 
 ## Timeline (IST)
@@ -102,3 +102,6 @@ labels -> shown in app, not scored or sent to judge.
 - Thu ~23:55 pushed to GitHub, deployed Space (SSR fix), hosted smoke + e2e (vtt and STT) pass.
   Found: judge variance flips boundary grades; STT path over-scores attention. Next: decide on
   judge variance fix, 300-word explanation, history redaction, scratchpad cleanup.
+- Fri ~00:30 borderline note deployed, scratchpad images deleted. Anthropic credit $3.63 (~70
+  gradings). Next (07:30): explanation, history export + redaction (user exports Antigravity
+  chat), final check, submit by 11:00 with APP_USER/APP_PASS in the form.
