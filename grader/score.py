@@ -23,6 +23,8 @@ THRESHOLDS = ((4.25, "Excellent"), (3.5, "Good"), (2.75, "Average"))
 # whatever the teaching; at or below CONCERN the problem is reported but not graded.
 VISUAL_FAIL = 1.5
 VISUAL_CONCERN = 3.0
+# The judge's pillar scores vary by about this much between runs on the same class.
+BORDERLINE = 0.15
 
 LABELS = {"excellent": "Excellent", "good": "Good", "average": "Average",
           "weak": "Poor", "quality issue": "Poor"}
@@ -51,8 +53,17 @@ def grade(pillars: dict[str, float | None], english_ratio: float | None = None,
         conf = "low"
         notes.append("Transcript is largely non-English or garbled ASR; teaching quality is hard to judge from text.")
     # Close to a boundary -> say so rather than overstate certainty.
-    if g == teaching and any(abs(weighted - cut) < 0.1 for cut, _ in THRESHOLDS) and conf == "high":
-        conf = "medium"
+    near = [(cut, name) for cut, name in THRESHOLDS if abs(weighted - cut) < BORDERLINE]
+    gated = visual is not None and visual <= VISUAL_FAIL
+    if near and not gated:
+        cut, name = near[0]
+        other = GRADES[GRADES.index(name) - 1] if weighted >= cut else name
+        side = "above" if weighted >= cut else "below"
+        notes.append(f"Borderline: {weighted:.2f} is {abs(weighted - cut):.2f} {side} the {name} cut-off "
+                     f"({cut}). Judge scores vary by about ±{BORDERLINE} between runs, so this class "
+                     f"could also be graded {other}.")
+        if conf == "high":
+            conf = "medium"
     return {"grade": g, "teaching_grade": teaching, "weighted_score": round(weighted, 2),
             "confidence": conf, "notes": notes,
             "weights_used": {k: round(WEIGHTS[k] / total_w, 3) for k in used}}

@@ -134,6 +134,18 @@ def test_visual_score_deductions():
     assert M.visual_score({**ok, "tutor_speaking_frames": 2})[0] is None
 
 
+def test_borderline_names_the_other_grade():
+    # hosted B435 run: 2.68 just below the Average cut-off
+    p = {"structure_rapport": 2.5, "individual_attention": 3.0, "homework_reinforcement": 2.5, "tone_energy": 2.5}
+    r = S.grade(p, llm_confidence="high", visual=5.0)
+    assert r["grade"] == "Poor" and r["confidence"] == "medium"
+    assert any("Borderline" in n and "could also be graded Average" in n for n in r["notes"])
+    above = S.grade({k: 3.6 for k in S.WEIGHTS}, visual=5.0)  # just above Good
+    assert any("could also be graded Average" in n for n in above["notes"])
+    # quality-issue override: no borderline note, the grade is fixed by the camera gate
+    assert not any("Borderline" in n for n in S.grade(p, visual=1.0)["notes"])
+
+
 def test_low_english_lowers_confidence():
     r = S.grade({k: 4.0 for k in S.WEIGHTS}, english_ratio=0.3, llm_confidence="high")
     assert r["confidence"] == "low"

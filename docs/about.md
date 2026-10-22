@@ -36,7 +36,8 @@ camera check:
    expected, not a sign of good teaching.
 
 Confidence drops when the transcript is mostly non-English or garbled, when no Zoom transcript
-was available, or when the score is close to a grade boundary.
+was available, or when the score is close to a grade boundary. Within ±0.15 of a cut-off the
+report says so and names the other grade the class could have received.
 
 ## Privacy
 
@@ -56,6 +57,8 @@ was available, or when the score is close to a grade boundary.
 
 - Tuned and tested on 10 labelled recordings: a sanity check, not a validation.
 - A missing branded background is not detected yet (one quality-issue class is missed for this reason).
-- The judge varies by roughly ±0.15 points between runs on the same class.
-- Without a `.vtt`, all students are merged into one speaker, so participation spread is approximate.
+- The judge varies by roughly ±0.15 points between runs on the same class, which can flip a
+  borderline grade. The same upload always returns the same (cached) report.
+- Without a `.vtt`, all students are merged into one speaker and tutor/student labels are guessed,
+  which tends to over-score participation. Upload the `.vtt` when you have it.
 - Non-English or mixed-language classes get low confidence.

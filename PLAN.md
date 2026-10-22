@@ -48,7 +48,10 @@ Label mapping: weak and quality issue -> Poor. Demo recordings shown but not sco
       Gradio SSR crashed on Spaces (svelte-i18n locale) -> `ssr_mode=False`.
 - [x] hosted smoke test: no login 401, wrong pw 400, login 200, 3 tabs, benchmark renders
 - [x] hosted e2e average/B435 + vtt: 102 s, **Poor 2.68** (benchmark run: Average 2.79; tone 3->2.5).
-      Judge noise at the 2.75 boundary -> consider median of several judge runs.
+      Judge noise at the 2.75 boundary. Decision: NO median-of-3 (3x cost on a small budget,
+      Anthropic per-minute limits). The result cache already makes the same upload return the same
+      report; score.py now adds a "Borderline" note naming the other grade within ±0.15 of a
+      cut-off (18 tests). README: both findings in Limitations, checklist scoring as next step.
 - [x] README draft with HF frontmatter (method, results v1-v4, privacy, limitations, run locally)
 - [ ] 300-word explanation
 - [ ] export + redact AI history (Claude Code + Antigravity); drop screenshots showing keys

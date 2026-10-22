@@ -47,7 +47,8 @@ teaching; smaller camera problems are reported but not graded. The LLM never pic
 itself, so the same pillar scores always give the same grade.
 
 Confidence is lowered for mostly non-English transcripts, when no Zoom transcript is
-available, and near a grade boundary.
+available, and near a grade boundary. Within ±0.15 of a cut-off the report says so and names
+the other grade the class could have received.
 
 ## Results
 
@@ -92,10 +93,23 @@ What I learned along the way:
 
 - Tuned and tested on 10 labelled recordings: a sanity check, not a validation.
 - A missing branded background is not detected.
-- The judge varies by about ±0.15 points between runs on the same class.
-- Without a `.vtt`, all students are merged into one speaker, so participation spread is approximate.
+- The judge varies by about ±0.15 points between runs on the same class, which can flip a
+  borderline grade: average/B435 scored 2.79 (Average) in the benchmark and 2.68 (Poor) on the
+  hosted app. The app caches each report by file hash, so the same upload always gets the same
+  report, and borderline results are labelled as such.
+- Without a `.vtt`, all students are merged into one speaker and tutor/student labels are guessed,
+  which tends to over-score participation: weak/B558 scored 2.68 (Poor) with its `.vtt` and 3.21
+  (Average) from speech-to-text. Upload the `.vtt` when you have it.
 - Non-English or mixed-language classes get low confidence.
 - The hosted Space sleeps when idle; the first request after a sleep takes about a minute.
+
+## Next steps
+
+- **Checklist scoring.** Ask the judge yes/no questions about observable events (greeted the
+  class? recapped? set specific homework? asked each child by name?) and compute pillar scores
+  in code. Factual answers vary far less between runs than holistic 1-5 scores, without paying
+  for several judge calls per class. Needs more labelled recordings to tune without overfitting.
+- Branded-background detection, and speaker diarisation for the no-`.vtt` path.
 
 ## Run locally
 
