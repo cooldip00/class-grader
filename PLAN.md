@@ -53,8 +53,11 @@ Label mapping: weak and quality issue -> Poor. Demo recordings shown but not sco
       report; score.py now adds a "Borderline" note naming the other grade within ±0.15 of a
       cut-off (18 tests). README: both findings in Limitations, checklist scoring as next step.
 - [x] README draft with HF frontmatter (method, results v1-v4, privacy, limitations, run locally)
-- [ ] 300-word explanation
-- [ ] export + redact AI history (Claude Code + Antigravity); drop screenshots showing keys
+- [x] 300-word explanation (289 words, `../submission/explanation.md`)
+- [x] export + redact AI history (Claude Code + Antigravity) -> `../submission/ai_history_*.md`.
+      Removed: secrets, emails, screenshots, tool outputs, raw file views, off-topic personal
+      messages; names from filenames, vtt speakers + rare words in vtt text, feedbacks.pdf.
+      Residual scan 0 for keys/emails/user name/timestamps/numbered lines.
 - [x] delete scratchpad frames/contact sheets/feature dumps (Fri ~00:30; only scripts remain)
 - [ ] submit
 

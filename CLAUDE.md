@@ -16,4 +16,4 @@ Update its checklist and log whenever a task is finished or a decision changes.
 
 ## Commands
 - Tests: `python -m pytest tests -q`
-- Benchmark: `python scripts\benchmark.py "d:\Greylabs AI\class recordings -20261022T150352Z-1-001\class recordings" --workers 3 [--video] [--only B482]`
+- Benchmark: `python scripts\benchmark.py "<path to class recordings>" --workers 3 [--video] [--only B482]`
