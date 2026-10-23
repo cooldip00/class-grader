@@ -16,7 +16,9 @@ short_description: Grades a recorded online class and explains why
 Upload a recorded online chess class (or paste a Google Drive link) and get a grade of
 **Poor / Average / Good / Excellent**, with pillar scores and timestamped evidence explaining it.
 
-- **Live app:** https://huggingface.co/spaces/CoolDip00/class-grader (login required; credentials are in the submission form)
+- **Live app:** https://cooldip00-class-grader.hf.space (login required; credentials are in the submission form).
+  Use this direct link: the embedded view on the Space page can't keep the login in Incognito or
+  browsers that block third-party cookies. Space page: https://huggingface.co/spaces/CoolDip00/class-grader
 - **Benchmark:** 6/10 exact and 9/10 within one grade on the 10 labelled sample recordings
 
 ## How it works
