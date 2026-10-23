@@ -102,6 +102,9 @@ What I learned along the way:
 - Without a `.vtt`, all students are merged into one speaker and tutor/student labels are guessed,
   which tends to over-score participation: weak/B558 scored 2.68 (Poor) with its `.vtt` and 3.21
   (Average) from speech-to-text. Upload the `.vtt` when you have it.
+- Speech-to-text runs on Groq's free tier: 7,200 audio seconds per hour and 28,800 per day, i.e.
+  about 2 fifty-minute classes per hour without a `.vtt`. Past that, the app asks you to retry
+  later. Uploads with a `.vtt` don't use Groq.
 - Non-English or mixed-language classes get low confidence.
 - The hosted Space sleeps when idle; the first request after a sleep takes about a minute.
 
